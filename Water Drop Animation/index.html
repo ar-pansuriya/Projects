@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            justify-content: center;
+            background-color: rgb(226, 226, 226);
+        }
+
+        h1 {
+            font-size: 8rem;
+            color: rgb(1, 116, 116);
+            position: relative;
+        }
+
+        span {
+            background-color: rgb(1, 116, 116);
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            position: absolute;
+            top: 60%;
+            left: 6%;
+        }
+
+        #a {
+            animation: drop 2s infinite ease;
+            width: 20px;
+        }
+
+        #b {
+            left: 309px;
+            animation: drop 2s 0.5s infinite ease-in-out;
+            height: 18px;
+            width: 18px;
+        }
+
+        #c {
+            left: 198px;
+            height: 18px;
+            animation: drop 2s 1s infinite ease-in;
+            width: 14px;
+        }
+
+        @keyframes drop {
+            0% {
+                opacity: 0%;
+                transform: translateY(0px);
+            }
+
+            35% {
+                opacity: 1;
+                transform: translateY(25px);
+            }
+
+            50% {
+                transform: translateY(100vh);
+            }
+
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <h1>Water
+            <span id="a"></span>
+            <span id="b"></span>
+            <span id="c"></span>
+        </h1>
+
+    </section>
+</body>
+
+</html>

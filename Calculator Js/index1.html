@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="combine">
+        <div class="all">
+            <input type="text" value="">
+            <div class="container">
+                <div class="row">
+                    <button class="btn" onclick="calculate('CE')">CE</button>
+                    <button class="btn" onclick="calculate('C')">C</button>
+                    <button class="btn" onclick="calculate('x')">x</button>
+                    <button class="btn" onclick="calculate('/')">/</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="calculate(7)">7</button>
+                    <button class="btn" onclick="calculate(8)">8</button>
+                    <button class="btn" onclick="calculate(9)">9</button>
+                    <button class="btn" onclick="calculate('*')">*</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="calculate(4)">4</button>
+                    <button class="btn" onclick="calculate(5)">5</button>
+                    <button class="btn" onclick="calculate(6)">6</button>
+                    <button class="btn" onclick="calculate('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="calculate(1)">1</button>
+                    <button class="btn" onclick="calculate(2)">2</button>
+                    <button class="btn" onclick="calculate(3)">3</button>
+                    <button class="btn" onclick="calculate('+')">+</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="calculate('+/-')">+/-</button>
+                    <button class="btn" onclick="calculate(0)">0</button>
+                    <button class="btn" onclick="calculate('.')">.</button>
+                    <button class="btn" onclick="calculate('=')">=</button>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 1rem;display: flex;flex-direction: column;
+        align-items: center;justify-content: space-between;" class="history">
+            <h1 style="text-align: center;color: grey;letter-spacing: 6px;">History</h1>
+            <div
+                style="height: 80vh; border: 2px solid black;width: 100%;padding: 0.5rem;border-radius: 6px;background-color: rgba(153, 205, 50, 0.46);position: relative;overflow-y: auto;">
+            </div>
+            <button onclick="deleteme()">Delete Me</button>
+        </div>
+
+    </div>
+    <script src="caljava.js"></script>
+</body>
+
+</html>
